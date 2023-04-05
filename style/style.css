@@ -26,7 +26,10 @@ body {
 }
 .header {
   width: 100%;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #2f303a;
 }
 .header .linkContainer {
   display: flex;
@@ -48,9 +51,66 @@ body {
   font-size: 30px;
   font-weight: 700;
 }
-.header .linkContainer .links{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    
+.header .linkContainer .links {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.header .linkContainer .links li {
+  font-size: 20px;
+  font-weight: 500;
+}
+.home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.home .musicCon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+.home .heroImg,
+.home .content {
+  width: 50%;
+}
+.home .heroImg img {
+  width: 600px;
+  height: 849px;
+  object-fit: cover;
+}
+.home .musicCon .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.home .musicCon .content h2 {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 108px;
+}
+.home .musicCon .content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 54px;
+}
+.home .musicCon .content button {
+  width: 200px;
+  height: 59px;
+  background: #1762a7;
+  border-radius: 10px;
+  border: 1px solid #1762a7;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
 }
